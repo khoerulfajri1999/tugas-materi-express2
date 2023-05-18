@@ -1,0 +1,27 @@
+GET http://localhost:3000/produk
+
+###
+POST http://localhost:3000/produk
+Content-Type: application/json
+
+{
+    "name":"produk1",
+    "is_active":false,
+    "description":"ascasd"
+}
+
+###
+GET http://localhost:3000/produk/2
+
+###
+DELETE  http://localhost:3000/produk/2
+
+###
+PUT  http://localhost:3000/produk/2
+Content-Type: application/json
+
+{
+    "name":"produk3",
+    "is_active":false,
+    "description":"ascasd"
+}
